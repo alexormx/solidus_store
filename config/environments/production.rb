@@ -81,7 +81,7 @@ Rails.application.configure do
     :enable_starttls_auto => true
   }
 
-
+  config.assets.css_compressor = nil
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
