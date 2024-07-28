@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   scope(path: '/shop') { draw :storefront }
+  #scope(path: '/') { draw :storefront }
   # This line mounts Solidus's routes at the root of your application.
   #
   # Unless you manually picked only a subset of Solidus components, this will mount routes for:
@@ -12,10 +13,13 @@ Rails.application.routes.draw do
   #
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
   # We ask that you don't use the :as option here, as Solidus relies on it being the default of "spree"
+  
   mount Spree::Core::Engine, at: '/shop'
+  #mount Spree::Core::Engine, at: '/'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
   # root "articles#index"
-  get '/', to: 'application#hello_world', as: :main_login
+  #get '/', to: 'application#hello_world', as: :main_login
+  get '/', to: redirect('/shop')
 end
