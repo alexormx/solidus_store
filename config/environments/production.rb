@@ -14,7 +14,7 @@ Rails.application.configure do
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
-  #config.action_controller.perform_caching = true
+  config.action_controller.perform_caching = true
   #config.action_controller.default_url_options = { host: "pasatiempos.com.mx" }
   #config.active_storage.delivery_method = :proxy
 
@@ -44,7 +44,7 @@ Rails.application.configure do
   
   # Store uploaded files on Amazon AWS.
   config.active_storage.service = :amazon
-  #config.active_storage.service_urls_expire_in = 1.hour
+  config.active_storage.service_urls_expire_in = 168.hour
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
