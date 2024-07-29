@@ -15,7 +15,7 @@ Rails.application.configure do
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
-  c#onfig.action_controller.default_url_options = { host: "pasatiempos.com.mx" }
+  #config.action_controller.default_url_options = { host: "pasatiempos.com.mx" }
   #config.active_storage.delivery_method = :proxy
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
