@@ -70,3 +70,7 @@ group :development, :test do
   gem "rubocop-rails", "~> 2.3"
   gem "rubocop-rspec", "~> 2.0"
 end
+
+gem 'solidus_i18n'
+gem 'kaminari-i18n'
+gem 'routing-filter'
