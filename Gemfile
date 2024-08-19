@@ -18,6 +18,7 @@ gem "active_storage_validations", "0.9.8"
 gem "image_processing",           "1.12.2"
 gem 'rails-i18n'
 gem 'dotenv-rails', groups: [:development, :test]
+gem "font-awesome-sass"
 
 group :development, :test do
   gem "sqlite3", "1.4.2"
