@@ -8,17 +8,17 @@
   
   text_flex_classes = 
     @home_collection ?
-      'lg:flex justify-between items-end' :
-      'flex justify-between items-end'
+      'justify-end items-end' :
+      ' justify-end items-end'
   
   padding_classes = 
     @home_collection ?
-      'p-3 md:p-6' :
-      'p-6'
+      'p-2 md:p-2' :
+      'p-2'
 %>
 
 <li 
-  class="aspect-square bg-gray-50 w-full rounded-lg md:rounded-xl lg:rounded-2xl  <%= additional_classes %>"
+  class="aspect-square bg-gray-50 w-full rounded md:rounded lg:rounded  <%= additional_classes %>"
   itemscope
   itemtype="http://schema.org/Product"
   id="product_<%= product.id %>"

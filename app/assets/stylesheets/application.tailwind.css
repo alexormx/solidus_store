@@ -5,7 +5,7 @@
 @layer base {
   html,
   body {
-    @apply box-border max-w-full antialiased scroll-smooth bg-white;
+    @apply box-border antialiased scroll-smooth bg-white;
     @apply dark:bg-black dark:text-sand;
   }
 }
