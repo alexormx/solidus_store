@@ -14,6 +14,7 @@ class HomeController < StoreController
     @featured_products = homepage_groups[0]
     @collection_products = homepage_groups[1]
     @cta_collection_products = homepage_groups[2]
-    @new_arrivals = homepage_groups[3]
+    #select the last 6 products for new arrivals
+    @new_arrivals = @products.last(4)
   end
 end

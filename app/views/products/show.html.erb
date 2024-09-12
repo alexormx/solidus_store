@@ -8,16 +8,22 @@
           <%= render 'product_thumbnails', product: @product %>
           <%= render 'product_image', product: @product %>
         </div>
-        <div class="col-span-full pt-12">
-          <%= render 'product_info', product: @product %>
-        </div>
       </div>
 
       <div class="flex flex-col col-span-full gap-y-8 lg:col-span-4 lg:gap-y-16">
         <%= render 'product_header', product: @product %>
         <%= render 'product_promotions', product: @product %>
         <%= render 'cart_line_items/form', product: @product %>
-        
+      </div>
+    </div>
+
+    <div class="wrapper grid-container py-4 lg:pb-12">
+      <div class="col-span-full lg:col-span-8">
+        <div class="col-span-full lg:col-span-8">
+          <%= render 'product_info', product: @product %>
+        </div>
+      </div>
+      <div class="flex flex-col col-span-full gap-y-8 lg:col-span-4 lg:gap-y-16">
         <%= render 'product_properties', product_properties: @product_properties %>
       </div>
     </div>
